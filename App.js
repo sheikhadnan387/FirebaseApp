@@ -1,10 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import Logo from './src/assets/logo.svg';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.simple_text}>{`Welcome to \nCode With Adnan`}</Text>
+      <Logo />
     </View>
   );
 };
@@ -13,6 +14,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
   },
   simple_text: {
     alignSelf: 'center',
